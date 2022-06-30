@@ -1,7 +1,7 @@
-function verificarPalindromo(palavra){
-    if(palavra.length % 2 == 0){
-        let metadeUm = palavra.slice(0, palavra.length/2);
-        let metadeDois = palavra.slice(palavra.length/2, palavra.length);
+function verificarPalindromo(array){
+    if(array.length % 2 == 0){
+        let metadeUm = array.slice(0, array.length/2);
+        let metadeDois = array.slice(array.length/2, array.length);
         metadeDois = metadeDois.split('');
         let metadeDoisInvertida = [];
         for(i = 0; i < metadeDois.length; i++){
@@ -14,9 +14,9 @@ function verificarPalindromo(palavra){
             console.log('Não Palíndromo!');
         }
     }else{
-        let metadeUm = palavra.slice(0, palavra.length/2);
-        let centro = palavra.slice(palavra.length/2, 1+palavra.length/2)
-        let metadeDois = palavra.slice(1+palavra.length/2, palavra.length);
+        let metadeUm = array.slice(0, array.length/2);
+        let centro = array.slice(array.length/2, 1+array.length/2)
+        let metadeDois = array.slice(1+array.length/2, array.length);
         metadeDois = metadeDois.split('');
         let metadeDoisInvertida = [];
         for(i = 0; i < metadeDois.length; i++){
